@@ -1,0 +1,827 @@
+@font-face {
+	font-family: 'Cafe24Ohsquare';
+	src: url('Cafe24Ohsquare.ttf') format('truetype');
+}
+
+body {
+	font-family: Cafe24Ohsquare;
+}
+/*showAnimals.jsp에서 사용*/
+#wrap {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+#header {
+	
+}
+
+#header .globalArea {
+	text-align: right;
+	padding-top: 10px;
+}
+
+#header .globalArea a {
+	text-decoration: none;
+	font-family: dotumche;
+	font-size: 12px;
+	padding: 0 5px;
+	color: #000000;
+}
+
+#header .logoArea {
+	
+}
+
+#header .logoArea h1 {
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	font-color:#000;
+}
+
+#header .menuArea {
+	height: 35px;
+	line-height: 35px;
+	border-top: 2px solid #ef0000;
+	border-bottom: 2px solid #ef0000;
+}
+
+#header .menuArea .mainMenu {
+	
+}
+
+#header .menuArea .mainMenu li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+#header .menuArea .mainMenu li a {
+	text-decoration: none;
+	color: #000;
+}
+
+#header .menuArea .mainMenu li a:hover {
+	background-color: #c5c3c3;
+}
+
+#content {
+	padding: 80px 0px 20px;
+}
+
+#content .contentBoxgray {
+	text-align: center;
+	padding: 26px;
+	border: 3px dashed #f9ece8;
+	margin-bottom: 30px;
+	background-color: #f7f3f3;
+}
+
+#content .contentBoxgray .boxTitle {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#content .contentBoxgray h3 {
+	display: inline-block;
+	border-bottom: 3px double #000;
+	padding-bottom: 5px;
+	font-size: 25px;
+}
+
+#content .contentBoxgray .leftBox {
+	display: inline-block;
+	width: 540px;
+}
+
+#content .contentBoxgray .rightBox {
+	display: inline-block;
+	width: 540px;
+	margin-left: 52px;
+}
+
+#content .contentBoxgray .title {
+	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #000000;
+	background-color: lightgray;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#content .contentBoxgray img:hover {
+	width: 100%;
+	opacity: 0.4;
+}
+
+#content .contentBoxgray a img {
+	
+}
+
+#content .contentBoxgray .info {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 25px;
+	font-size: 20px;
+}
+
+#content .contentBoxgray .celeb {
+	padding-top: 10px;
+	line-height: 25spx;
+	font-size: 20px;
+}
+
+#footer {
+	text-align: center;
+	border-top: 1px solid #000;
+	padding: 10px;
+	font-size: 12px;
+}
+
+/*startTest.html fox image 에서 사용*/
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+}
+
+html {
+	background: #f9ece8;
+	font-family: Cafe24Ohsquare;
+}
+
+.fox {
+	background: #f9ece8;
+	width: 215px;
+	height: 275px;
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.fox .head {
+	width: 184px;
+	height: 184px;
+	display: block;
+	background: #ff7373;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.fox .head:before, .fox .head:after {
+	content: '';
+	width: 184px;
+	height: 184px;
+	display: block;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	bottom: -92px;
+}
+
+.fox .head:before {
+	left: -92px;
+}
+
+.fox .head:after {
+	right: -92px;
+}
+
+.fox .head .eye {
+	width: 18px;
+	height: 9px;
+	display: block;
+	background: #000;
+	border-radius: 18px 18px 0 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 40px;
+	animation: piscar 5s step-start 0s infinite;
+	-webkit-animation: piscar 5s step-start 0s infinite;
+}
+
+.fox .head .eye:nth-child(odd) {
+	left: 37px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.fox .head .eye:nth-child(even) {
+	right: 37px;
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.fox .ear {
+	width: 93px;
+	height: 93px;
+	display: block;
+	background: #ff9090;
+	position: absolute;
+	top: 0px;
+}
+
+.fox .ear:nth-child(odd) {
+	border-radius: 0 93px 0 0;
+	left: 31px;
+}
+
+.fox .ear:nth-child(even) {
+	border-radius: 93px 0 0 0;
+	right: 0px;
+}
+
+.fox .nose {
+	width: 27px;
+	height: 27px;
+	display: block;
+	background: #000;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	top: 169px;
+	right: 78px;
+}
+
+.fox .body {
+	width: 107px;
+	height: 214px;
+	display: block;
+	background: #ff7373;
+	border-radius: 0 214px 214px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+	right: 0px;
+}
+
+.fox .tail {
+	width: 215px;
+	height: 107px;
+	display: block;
+	background: #ff7373;
+	border-radius: 0 0 214px 214px;
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.fox .tail:before {
+	content: '';
+	width: 57px;
+	height: 57px;
+	display: block;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+}
+
+.fox:hover .head, .fox:hover .ear {
+	transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}
+
+.fox:hover .ear:nth-child(odd) {
+	left: 48px;
+}
+
+.fox:hover .ear:nth-child(even) {
+	right: -3px;
+	top: 20px;
+}
+
+.fox:hover .nose {
+	width: 24px;
+	height: 24px;
+	top: 165px;
+	right: 103px;
+}
+
+a.author {
+	font-size: 12px;
+	text-decoration: none;
+	color: #f47c7c;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+@
+keyframes piscar { 15% {
+	height: 1px;
+}
+
+45%
+{
+height
+:
+ 
+9
+px
+;
+
+  
+}
+50%
+{
+height
+:
+ 
+1
+px
+;
+
+  
+}
+}
+@
+-webkit-keyframes piscar { 15% {
+	height: 1px;
+}
+
+45%
+{
+height
+:
+ 
+9
+px
+;
+
+  
+}
+50%
+{
+height
+:
+ 
+1
+px
+;
+
+  
+}
+}
+
+/* startTest.html start button 에서 사용 */
+.start-button {
+	background-color: #FF7373;
+	font-size: 40px;
+	top: 70%;
+	left: 40%;
+	position: absolute;
+	border: none;
+	padding: 2px;
+}
+
+/*testAnimal.html에서 사용*/
+.file-upload {
+	background-color: #ffffff;
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.file-upload-btn {
+	width: 100%;
+	margin: 0;
+	color: #fff;
+	background: #FF7373;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #DC7373;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.file-upload-btn:hover {
+	background: #DC7373;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.file-upload-btn:active {
+	border: 0;
+	transition: all .2s ease;
+}
+
+.file-upload-content {
+	display: none;
+	text-align: center;
+}
+
+.file-upload-input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.next-btn {
+	width: 50;
+	margin: 0;
+	color: #fff;
+	background: #ff7373b0;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #DC7373;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.next-btn:hover {
+	background: #DC7373;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.next-btn:active {
+	border: 0;
+	transition: all .2s ease;
+}
+
+.file-upload-content {
+	display: none;
+	text-align: center;
+}
+
+.file-upload-input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.image-upload-wrap {
+	margin-top: 20px;
+	border: 4px dashed #FF7373;
+	position: relative;
+}
+
+.image-dropping, .image-upload-wrap:hover {
+	background-color: #FF7373;
+	border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+	padding: 0 15px 15px 15px;
+	color: #222;
+}
+
+.drag-text {
+	text-align: center;
+}
+
+.drag-text h3 {
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 60px 0;
+}
+
+.file-upload-image {
+	max-height: 200px;
+	max-width: 200px;
+	margin: auto;
+	padding: 20px;
+}
+
+.remove-image {
+	width: 200px;
+	margin: 0;
+	color: #fff;
+	background: #cd4535;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #b02818;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.remove-image:hover {
+	background: #c13b2a;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.remove-image:active {
+	border: 0;
+	transition: all .2s ease;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	transition: all 100ms ease-in;
+}
+
+/*post.html 에서 사용*/
+@import
+	url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600)
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 30px;
+	color: #777;
+}
+
+.post_container {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],
+	#contact input[type="url"], #contact textarea, #contact button[type="submit"]
+	{
+	font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+	background: #F9F9F9;
+	padding: 25px;
+	margin: 50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],
+	#contact input[type="url"], #contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover,
+	#contact input[type="tel"]:hover, #contact input[type="url"]:hover,
+	#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+	resize: none;
+}
+
+#contact button[type="submit"] {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #0CF;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+	background: #09C;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
+
+/*post.html 에서 사용*/
+@import
+	url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600)
+	;
+
+html {
+	background: #f9ece8;
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 30px;
+	color: #777;
+}
+
+.post_container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],
+	#contact input[type="url"], #contact textarea, #contact button[type="submit"]
+	{
+	font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+	background: #F9F9F9;
+	padding: 25px;
+	margin: 50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],
+	#contact input[type="url"], #contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover,
+	#contact input[type="tel"]:hover, #contact input[type="url"]:hover,
+	#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+	resize: none;
+}
+
+#contact button[type="submit"] {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #0CF;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+	background: #09C;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
